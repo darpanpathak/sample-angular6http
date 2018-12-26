@@ -1,0 +1,39 @@
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand">Bootswatch</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="" target="_blank">pathakdarpan77@gmail.com</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-3" *ngFor="let ks of data">
+                <div class="card">
+                    <span>Pleadged : {{ks["amt.pledged"]}}</span> <br>
+                    <span>Backers : {{ks["num.backers"]}}</span> <br>
+                    <span>Percentage Funded : {{ks["percentage.funded"]}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
